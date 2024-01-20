@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans";
+  font-weight: 800;
+  background: #fafafa;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 100px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header h3 {
+  color: #111517;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.theme p {
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back {
+  width: 136px;
+  height: 40px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  margin-left: -20px;
+}
+.back:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+button a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #111517;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  margin-top: 40px;
+}
+.description {
+  display: flex;
+  align-items: center;
+  gap: 141px;
+}
+.title h5 {
+  color: #111517;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 23px;
+}
+.title p {
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 200% */
+}
+.title span {
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.text p {
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 200% */
+}
+.text span {
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.footer {
+  margin-top: 68px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer h4 {
+  color: #111517;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+#btn_1,
+#btn_2,
+#btn_3 {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: #111517;
+  font-size: 14px;
+  font-weight: 300;
+}
+
