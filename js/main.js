@@ -3,6 +3,9 @@ const wrapper = document.getElementById('wrapper');
 let url = window.location.href.substring(38)
 const body = document.querySelector('.Allbody')
 const loader = document.querySelector('.loader')
+const theme = document.getElementById('theme');
+const bodymain = document.querySelector('body')
+
 body.style.display = "none";
 
 function loaderCallback() {
@@ -35,7 +38,9 @@ function createCard(flag) {
                 </div>
                 <div class="footer">
                     <h4>Border Countries: </h4>
-
+                    ${flag.borders.map(el=>{
+                        return `<button class="btn">${el.slug}</button>`
+                    })}
                 </div>
                 </div>
             </div>
@@ -43,14 +48,24 @@ function createCard(flag) {
 }
 document.addEventListener('DOMContentLoaded', function () {
     fetch(`https://countries-api-v7sn.onrender.com/countries/slug/${url}`)
-   
+
         .then(data => data.json())
         .then(data => {
             let card = createCard(data)
             wrapper.innerHTML = card;
             loaderCallback()
-            
+            const buttun = document.querySelectorAll(".btn")
+
+            buttun.forEach(el => {
+                el.addEventListener("click", function () {
+                    console.log("helo");
+                    window.location.assign(`./main.html?${el.innerText}`);
+                })
+            })
         })
-        
+
 })
 
+theme && theme.addEventListener("click", () => {
+    bodymain.classList.toggle("darc")
+});

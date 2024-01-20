@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Nunito Sns";
+  font-family: "Nunito Sans";
   font-weight: 800;
   background: var(--bgcolor);
 }

@@ -6,7 +6,17 @@
 body {
   font-family: "Nunito Sans";
   font-weight: 800;
-  background: #fafafa;
+  background: var(--bgcolor);
+}
+:root {
+  --bgcolor: #fafafa;
+  --textcolor: #111517;
+  --cardcolor: white;
+}
+.darc {
+  --bgcolor: #202c36;
+  --textcolor: white;
+  --cardcolor: #2b3844;
 }
 
 .header {
@@ -14,12 +24,12 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 24px 100px;
-  background: #fff;
+  background: var(--bgcolor);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
 }
 
 .header h3 {
-  color: #111517;
+  color: var(--textcolor);
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
@@ -32,7 +42,7 @@ body {
   cursor: pointer;
 }
 .theme p {
-  color: #111517;
+  color: var(--textcolor);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -66,7 +76,7 @@ button a {
   gap: 10px;
   margin-left: 30px;
   text-decoration: none;
-  color: #111517;
+  color: var(--textcolor);
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
@@ -83,7 +93,7 @@ button a {
   gap: 141px;
 }
 .title h5 {
-  color: #111517;
+  color: var(--textcolor);
   font-size: 32px;
   font-style: normal;
   font-weight: 800;
@@ -91,28 +101,28 @@ button a {
   margin-bottom: 23px;
 }
 .title p {
-  color: #111517;
+  color: var(--textcolor);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px; /* 200% */
 }
 .title span {
-  color: #111517;
+  color: var(--textcolor);
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
 }
 .text p {
-  color: #111517;
+  color: var(--textcolor);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px; /* 200% */
 }
 .text span {
-  color: #111517;
+  color: var(--textcolor);
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -124,9 +134,11 @@ button a {
   display: flex;
   align-items: center;
   gap: 15px;
+  width: 600px;
+  flex-wrap: wrap;
 }
 .footer h4 {
-  color: #111517;
+  color: var(--textcolor);
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -138,7 +150,7 @@ button a {
   padding: 5px 10px;
   border: none;
   cursor: pointer;
-  color: #111517;
+  color: var(--textcolor);
   font-size: 14px;
   font-weight: 300;
 }
@@ -179,4 +191,15 @@ button a {
   50% {
     transform: rotate(-80deg);
   }
+}
+.btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgb(86, 144, 225);
+  border: 1px solid black;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: transparent;
+  color: var(--textcolor);
 }
