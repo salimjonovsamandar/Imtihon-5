@@ -215,7 +215,7 @@ form select {
   }
 }
 
-@media (max-width: 1204px) {
+@media (max-width: 1024px) {
   .header_container {
     width: 1024px;
   }
@@ -223,27 +223,33 @@ form select {
     width: 1024px;
   }
   .main {
-    width: 998px;
+    width: 1024px;
     justify-content: space-around;
   }
   .wrapper {
-    width: 998px;
+    width: 860px;
     justify-content: space-around;
   }
 }
+@media (max-width: 860px) {
+  .header_container {
+    width: 768px;
+  }
+  .header {
+    width: 768px
+  }
+  .main {
+    width: 768px;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .wrapper {
+    width: 768px;
+    justify-content: space-evenly;
+  }
+  .header h3 {
+    font-size: 18px;
+  }
+}
 
-/* @media (max-width: 375px) {
-  body{
-      margin: 0px auto;
-  }
-  .header{
-      width: 375px;
-
-  }
-  .main{
-      width: 375px;
-      justify-content: center;
-      flex-wrap: wrap;
-  }
-  
-} */
