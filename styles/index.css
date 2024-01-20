@@ -18,7 +18,6 @@ body {
   --textcolor: white;
   --cardcolor: #2b3844;
 }
-
 .header {
   display: flex;
   align-items: center;
@@ -27,7 +26,6 @@ body {
   background: var(--cardcolor);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
 }
-
 .header h3 {
   color: var(--textcolor);
   font-size: 24px;
@@ -53,7 +51,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .group {
   display: flex;
   line-height: 28px;
@@ -67,7 +64,6 @@ body {
   margin: 48px 0px;
   flex-wrap: wrap;
 }
-
 .input {
   width: 480px;
   height: 56px;
@@ -81,7 +77,6 @@ body {
   color: var(--textcolor);
   transition: 0.3s ease;
 }
-
 .input::placeholder {
   color: #848484;
   font-size: 14px;
@@ -90,7 +85,6 @@ body {
   line-height: 20px; /* 142.857% */
   width: 200px;
 }
-
 .input:focus,
 input:hover {
   outline: none;
@@ -98,7 +92,6 @@ input:hover {
   border-color: rgba(100, 134, 228, 0.4);
   box-shadow: 0 0 0 4px rgba(63, 96, 166, 0.1);
 }
-
 .icon {
   position: absolute;
   left: 1rem;
@@ -106,7 +99,6 @@ input:hover {
   width: 1rem;
   height: 1rem;
 }
-
 #btn {
   padding: 17px;
   border-radius: 8px;
@@ -124,7 +116,6 @@ input:hover {
   color: var(--textcolor);
   border: 1px solid black;
 }
-
 form select {
   width: 200px;
   height: 56px;
@@ -140,11 +131,9 @@ form select {
   line-height: 20px; /* 142.857% */
   cursor: pointer;
 }
-
 .wrapper {
   margin-left: auto;
   margin-right: auto;
-
   display: flex;
   gap: 74px;
   flex-wrap: wrap;
@@ -155,7 +144,6 @@ form select {
   -webkit-box-shadow: 0px 2px 7px 3px lightgray;
   box-shadow: 0px 2px 7px 3px lightgray;
 }
-
 .card {
   width: 264px;
   height: 336px;
@@ -169,7 +157,6 @@ form select {
   height: 160px;
   border-radius: 5px 5px 0px 0px;
 }
-
 .card h2 {
   color: var(--textcolor);
   font-size: 18px;
@@ -194,7 +181,6 @@ form select {
   font-weight: 300;
   line-height: 16px;
 }
-
 .loader {
   width: 150px;
   height: 150px;
@@ -206,29 +192,58 @@ form select {
   margin-right: auto;
   margin-top: 250px;
 }
-
 .loader_cube {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 30px;
 }
-
 .loader_cube--glowing {
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
-
 .loader_cube--color {
   z-index: 1;
   filter: blur(2px);
   background: linear-gradient(135deg, #1afbf0, #da00ff);
   animation: loadtwo 2.5s ease-in-out infinite;
 }
-
 @keyframes loadtwo {
   50% {
     transform: rotate(-80deg);
   }
 }
+
+@media (max-width: 1204px) {
+  .header_container {
+    width: 1024px;
+  }
+  .header {
+    width: 1024px;
+  }
+  .main {
+    width: 998px;
+    justify-content: space-around;
+  }
+  .wrapper {
+    width: 998px;
+    justify-content: space-around;
+  }
+}
+
+/* @media (max-width: 375px) {
+  body{
+      margin: 0px auto;
+  }
+  .header{
+      width: 375px;
+
+  }
+  .main{
+      width: 375px;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+} */
