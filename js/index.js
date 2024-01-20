@@ -66,7 +66,7 @@ wrapper && wrapper.addEventListener('click', () => {
     card.forEach(cardAdd => {
         cardAdd.addEventListener("click", function () {
             let cardId = this.getAttribute("id");
-            window.location.assign(`./pages/main.html?${cardId}`);
+            window.location.assign(`https://imtihon-5-virid.vercel.app/pages/main.html?${cardId}`);
         });
     });
 })
